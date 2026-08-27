@@ -1,0 +1,39 @@
+{
+  "model": "LogisticRegression(max_iter=1000)",
+  "features": [
+    "age",
+    "income",
+    "credit_score",
+    "loan_amount",
+    "loan_term",
+    "employment_years",
+    "dependents",
+    "dti"
+  ],
+  "target": "loan_approved",
+  "decision_threshold": 0.5,
+  "random_seed": 42,
+  "test_size": 0.2,
+  "n_train": 1600,
+  "n_test": 400,
+  "metrics": {
+    "accuracy": 0.8975,
+    "roc_auc": 0.9787322336341945,
+    "precision_not_approved": 0.8666666666666667,
+    "recall_not_approved": 0.8827160493827161,
+    "precision_approved": 0.9191489361702128,
+    "recall_approved": 0.907563025210084,
+    "train_accuracy": 0.918125
+  },
+  "intercept": 1.4758173767574985,
+  "coefficients": {
+    "age": -0.08410425794238184,
+    "income": 1.3914033866270779,
+    "credit_score": 5.007780231447033,
+    "loan_amount": -1.0104789838807708,
+    "loan_term": -0.08429917249371874,
+    "employment_years": 1.3908943207166715,
+    "dependents": -0.6052659120141993,
+    "dti": -1.833970165200365
+  }
+}
